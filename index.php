@@ -12,8 +12,6 @@ $shapes = array(
 
 $areaCalculator = new ShapeCalculator\AreaCalculator($shapes);
 
-//echo $areaCalculator->calculate();
-
 $outputter = new ShapeCalculator\Outputter($areaCalculator);
 
 echo $outputter->json();
