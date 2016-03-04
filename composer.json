@@ -6,7 +6,9 @@
             "email": "pascallubbers8@hotmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "phpunit/phpunit": "5.0.*"
+    },
     "autoload": {
         "psr-4": {
             "Acme\\": "src/"
