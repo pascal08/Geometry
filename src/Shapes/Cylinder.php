@@ -42,6 +42,6 @@ class Cylinder implements SolidInterface
      */
     public function surfaceArea()
     {
-        return 2 * pi() * 2 * $this->radius + pi() * pow($this->radius, 2) * $this->length;
+        return 2 * pi() * $this->radius * $this->length + 2 * pi() * pow($this->radius, 2);
     }
 }
