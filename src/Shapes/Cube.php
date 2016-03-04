@@ -8,14 +8,14 @@ class Cube implements SolidInterface
 {
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $length;
 
     /**
      * Cube constructor.
      *
-     * @param $length
+     * @param float|int $length
      */
     public function __construct($length)
     {
@@ -23,7 +23,7 @@ class Cube implements SolidInterface
     }
 
     /**
-     * @return int|float
+     * @return float|int
      */
     public function volume()
     {
@@ -31,7 +31,7 @@ class Cube implements SolidInterface
     }
 
     /**
-     * @return int|float
+     * @return float|int
      */
     public function surfaceArea()
     {
