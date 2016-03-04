@@ -42,9 +42,9 @@ class Cube implements ThreeDimensionalInterface
      */
     public function surfaceArea()
     {
-        $surfaceArea[] = $this->width * $this->height;
-        $surfaceArea[] = $this->width * $this->depth;
-        $surfaceArea[] = $this->height * $this->depth;
+        $surfaceArea[] = 2 * $this->width * $this->height;
+        $surfaceArea[] = 2 * $this->width * $this->depth;
+        $surfaceArea[] = 2 * $this->height * $this->depth;
 
         return array_sum($surfaceArea);
     }
