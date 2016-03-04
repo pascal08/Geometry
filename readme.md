@@ -1,22 +1,26 @@
-# S.O.L.I.D Principles #
+# Geometry Calculator #
 
-### Single Responsibility ###
+### Shapes ###
 
-- [x] separate class for outputting area/volume
+Plane shapes:
+ - Circle
+ - Rectangle
+ - Square
 
-### Open-Closed ###
+Solid shapes:
+ - Cone
+ - Cube
+ - Cylinder
+ - Pyramid
+ - Rectangular Prism
+ - Sphere
 
-- [x] no need to modify the calculator classes when adding a new figure class
+### Calculates ###
 
-### Liskov Substitution ###
+Plane shapes:
+ - Area
+ - Perimeter
 
-- [ ] a class should be substitutable for their parent class
-
-### Interface Segregation ###
-
-- [x] a new shape will not be forced to implement area AND volume calculation
-
-### Dependency Inversion ###
-
-- [ ] a high level module should not depend on a low level module but they should depend on abstractions
-
+Solid shapes:
+ - Volume
+ - Surface Area
