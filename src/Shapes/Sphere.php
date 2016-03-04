@@ -8,12 +8,12 @@ class Sphere implements ThreeDimensionalInterface
 {
 
     /**
-     * @var float
+     * @var int|float
      */
     public $radius;
 
     /**
-     * @param float $radius
+     * @param int|float $radius
      */
     public function __construct($radius)
     {
@@ -21,10 +21,18 @@ class Sphere implements ThreeDimensionalInterface
     }
 
     /**
-     * @return float
+     * @return int|float
      */
     public function volume()
     {
         return (4/3) * pi() * pow($this->radius, 3);
+    }
+
+    /**
+     * @return int|float
+     */
+    public function surfaceArea()
+    {
+        return 4 * pi() * pow($this->radius, 2 );
     }
 }
