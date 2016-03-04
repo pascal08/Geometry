@@ -19,3 +19,17 @@ $outputter = new ShapeCalculator\Outputter($areaCalculator);
 
 echo $outputter->json();
 echo PHP_EOL;
+
+// Circumference
+echo ' Circumference: ';
+
+$squares = array(
+    new Shapes\Square(2)
+);
+
+$areaCalculator = new ShapeCalculator\CircumferenceCalculator($squares);
+
+$outputter = new ShapeCalculator\Outputter($areaCalculator);
+
+echo $outputter->json();
+echo PHP_EOL;
