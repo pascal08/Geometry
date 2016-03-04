@@ -8,7 +8,7 @@ class Square implements TwoDimensionalInterface
 {
 
     /**
-     * @var float
+     * @var float|int
      */
     public $length;
 
@@ -23,10 +23,18 @@ class Square implements TwoDimensionalInterface
     }
 
     /**
-     * @return float
+     * @return float|int
      */
     public function area()
     {
         return pow($this->length, 2);
+    }
+
+    /**
+     * @return float|int
+     */
+    public function circumference()
+    {
+        return 4 * $this->length;
     }
 }

@@ -9,20 +9,20 @@ class Rectangle implements TwoDimensionalInterface
 
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $width;
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $height;
 
     /**
      * Rectangle constructor.
      *
-     * @param int|float $width
-     * @param int|float $height
+     * @param float|int $width
+     * @param float|int $height
      */
     public function __construct($width, $height)
     {
@@ -32,10 +32,18 @@ class Rectangle implements TwoDimensionalInterface
     }
 
     /**
-     * @return int|float
+     * @return float|int
      */
     public function area()
     {
         return $this->width * $this->height;
+    }
+
+    /**
+     * @return float|int
+     */
+    public function circumference()
+    {
+        return 2 * $this->width + 2 * $this->height;
     }
 }

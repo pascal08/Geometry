@@ -8,7 +8,7 @@ class Circle implements TwoDimensionalInterface
 {
 
     /**
-     * @var float
+     * @var float|int
      */
     public $radius;
 
@@ -26,5 +26,13 @@ class Circle implements TwoDimensionalInterface
     public function area()
     {
         return pow($this->radius, 2) * pi();
+    }
+
+    /**
+     * @return float
+     */
+    public function circumference()
+    {
+        return 2 * $this->radius * pi();
     }
 }
