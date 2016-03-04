@@ -10,43 +10,16 @@ class Cube implements ThreeDimensionalInterface
     /**
      * @var int|float
      */
-    private $width;
-
-    /**
-     * @var int|float
-     */
-    private $depth;
-
-    /**
-     * @var int|float
-     */
-    private $height;
+    private $length;
 
     /**
      * Cube constructor.
      *
-     * @param int|float $width
-     * @param int|float $depth
-     * @param int|float $height
+     * @param $length
      */
-    public function __construct($width, $depth, $height)
+    public function __construct($length)
     {
-
-        $this->width = $width;
-        $this->depth = $depth;
-        $this->height = $height;
-    }
-
-    /**
-     * @return int|float
-     */
-    public function surfaceArea()
-    {
-        $surfaceArea[] = 2 * $this->width * $this->height;
-        $surfaceArea[] = 2 * $this->width * $this->depth;
-        $surfaceArea[] = 2 * $this->height * $this->depth;
-
-        return array_sum($surfaceArea);
+        $this->length = $length;
     }
 
     /**
@@ -54,6 +27,14 @@ class Cube implements ThreeDimensionalInterface
      */
     public function volume()
     {
-        return $this->width * $this->height * $this->depth;
+        return pow($this->length, 3);
+    }
+
+    /**
+     * @return int|float
+     */
+    public function surfaceArea()
+    {
+        return 6 * pow($this->length, 2);
     }
 }
