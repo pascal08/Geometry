@@ -1,7 +1,7 @@
 <?php
 
 use Acme\Shapes as Shapes;
-use Acme\ShapeCalculator as ShapeCalculator;
+use Acme\ShapeCalculator\PerimeterCalculator;
 
 class PerimeterCalculatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -21,11 +21,11 @@ class PerimeterCalculatorTest extends \PHPUnit_Framework_TestCase
         );
     }
 
-    public function testMultipleShapes()
+    public function testCalculation()
     {
-        $areaCalculator = new ShapeCalculator\PerimeterCalculator($this->shapes);
+        $calculator = new PerimeterCalculator($this->shapes);
 
-        $area = $areaCalculator->calculate();
+        $area = $calculator->calculate();
 
         $assertValue = 103.6993;
 
