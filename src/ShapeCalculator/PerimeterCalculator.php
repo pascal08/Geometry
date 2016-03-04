@@ -21,7 +21,7 @@ class PerimeterCalculator implements CalculatorInterface
     }
 
     /**
-     * @return number
+     * @return float|int
      * @throws \Exception
      */
     public function calculate()
