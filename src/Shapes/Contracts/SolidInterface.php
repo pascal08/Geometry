@@ -2,7 +2,7 @@
 
 namespace Acme\Shapes\Contracts;
 
-interface ThreeDimensionalInterface
+interface SolidInterface
 {
     public function volume();
     public function surfaceArea();

@@ -2,9 +2,9 @@
 
 namespace Acme\Shapes;
 
-use Acme\Shapes\Contracts\ThreeDimensionalInterface;
+use Acme\Shapes\Contracts\SolidInterface;
 
-class Cube implements ThreeDimensionalInterface
+class Cube implements SolidInterface
 {
 
     /**

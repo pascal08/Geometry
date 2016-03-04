@@ -3,7 +3,7 @@
 namespace Acme\ShapeCalculator;
 
 use Acme\ShapeCalculator\Contracts\CalculatorInterface;
-use Acme\Shapes\Contracts\TwoDimensionalInterface;
+use Acme\Shapes\Contracts\PlaneInterface;
 
 class AreaCalculator implements CalculatorInterface
 {
@@ -29,7 +29,7 @@ class AreaCalculator implements CalculatorInterface
         $area = [];
 
         foreach ($this->shapes as $shape) {
-            if (!$shape instanceof TwoDimensionalInterface) {
+            if (!$shape instanceof PlaneInterface) {
                 throw new \Exception('Shape is not two dimensional.');
             }
 

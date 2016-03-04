@@ -2,9 +2,9 @@
 
 namespace Acme\Shapes;
 
-use Acme\Shapes\Contracts\ThreeDimensionalInterface;
+use Acme\Shapes\Contracts\SolidInterface;
 
-class Sphere implements ThreeDimensionalInterface
+class Sphere implements SolidInterface
 {
 
     /**

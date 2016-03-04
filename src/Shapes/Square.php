@@ -2,9 +2,9 @@
 
 namespace Acme\Shapes;
 
-use Acme\Shapes\Contracts\TwoDimensionalInterface;
+use Acme\Shapes\Contracts\PlaneInterface;
 
-class Square implements TwoDimensionalInterface
+class Square implements PlaneInterface
 {
 
     /**

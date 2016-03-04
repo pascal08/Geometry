@@ -2,9 +2,9 @@
 
 namespace Acme\Shapes;
 
-use Acme\Shapes\Contracts\TwoDimensionalInterface;
+use Acme\Shapes\Contracts\PlaneInterface;
 
-class Circle implements TwoDimensionalInterface
+class Circle implements PlaneInterface
 {
 
     /**

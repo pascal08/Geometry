@@ -2,7 +2,7 @@
 
 namespace Acme\Shapes\Contracts;
 
-interface TwoDimensionalInterface {
+interface PlaneInterface {
 
     public function area();
     public function perimeter();

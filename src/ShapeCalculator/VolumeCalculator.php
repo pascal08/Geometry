@@ -3,7 +3,7 @@
 namespace Acme\ShapeCalculator;
 
 use Acme\ShapeCalculator\Contracts\CalculatorInterface;
-use Acme\Shapes\Contracts\ThreeDimensionalInterface;
+use Acme\Shapes\Contracts\SolidInterface;
 
 class VolumeCalculator implements CalculatorInterface
 {
@@ -30,7 +30,7 @@ class VolumeCalculator implements CalculatorInterface
         $volume = [];
 
         foreach ($this->shapes as $shape) {
-            if (!$shape instanceof ThreeDimensionalInterface) {
+            if (!$shape instanceof SolidInterface) {
                 throw new \Exception('Shape is not three dimensional.');
             }
 
