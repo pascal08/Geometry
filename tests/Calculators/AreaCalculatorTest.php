@@ -15,10 +15,21 @@ class AreaCalculatorTest extends \PHPUnit_Framework_TestCase
         $this->delta = 0.0001;
 
         $this->shapes = array(
-            new Shapes\Circle(8.19),
-            new Shapes\Rectangle(7.33, 7.91),
-            new Shapes\Square(5.44),
+            $this->solidShapeDummy(),
+            $this->solidShapeDummy(),
+            $this->solidShapeDummy()
         );
+    }
+
+    protected function solidShapeDummy()
+    {
+        $solidShape = $this->getMock('\Acme\Shapes\Contracts\PlaneInterface');
+        $solidShape
+            ->expects($this->any())
+            ->method('area')
+            ->will($this->returnValue(3.0001));
+
+        return $solidShape;
     }
 
     public function testCalculation()
@@ -27,7 +38,7 @@ class AreaCalculatorTest extends \PHPUnit_Framework_TestCase
 
         $area = $calculator->calculate();
 
-        $assertValue = 298.2997;
+        $assertValue = 9.0003;
 
         $this->assertEquals($area, $assertValue, '', $this->delta);
     }
