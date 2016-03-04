@@ -31,7 +31,6 @@ class RectangularPrism implements SolidInterface
      */
     public function __construct($width, $depth, $height)
     {
-
         $this->width = $width;
         $this->depth = $depth;
         $this->height = $height;
@@ -42,6 +41,8 @@ class RectangularPrism implements SolidInterface
      */
     public function surfaceArea()
     {
+        $surfaceArea = [];
+
         $surfaceArea[] = 2 * $this->width * $this->height;
         $surfaceArea[] = 2 * $this->width * $this->depth;
         $surfaceArea[] = 2 * $this->height * $this->depth;
