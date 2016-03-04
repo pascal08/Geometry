@@ -8,20 +8,20 @@ class Pyramid implements SolidInterface
 {
 
     /**
-     * @var
+     * @var float|int
      */
     private $length;
 
     /**
-     * @var
+     * @var float|int
      */
     private $height;
 
     /**
      * Pyramid constructor.
      *
-     * @param $length
-     * @param $height
+     * @param float|int $length
+     * @param float|int $height
      */
     public function __construct($length, $height)
     {
@@ -30,7 +30,7 @@ class Pyramid implements SolidInterface
     }
 
     /**
-     * @return float
+     * @return float|int
      */
     public function volume()
     {
@@ -38,7 +38,7 @@ class Pyramid implements SolidInterface
     }
 
     /**
-     * @return number
+     * @return float|int
      */
     public function surfaceArea()
     {
