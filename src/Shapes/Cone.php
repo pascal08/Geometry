@@ -8,12 +8,12 @@ class Cone implements SolidInterface
 {
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $height;
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $radius;
 
