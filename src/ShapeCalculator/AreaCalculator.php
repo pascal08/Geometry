@@ -30,7 +30,7 @@ class AreaCalculator implements CalculatorInterface
 
         foreach ($this->shapes as $shape) {
             if (!$shape instanceof TwoDimensionalInterface) {
-                throw new \Exception('Shape is not implementing TwoDimensionalInterface');
+                throw new \Exception('Shape is not two dimensional.');
             }
 
             $area[] = $shape->area();

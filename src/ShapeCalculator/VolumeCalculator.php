@@ -31,7 +31,7 @@ class VolumeCalculator implements CalculatorInterface
 
         foreach ($this->shapes as $shape) {
             if (!$shape instanceof ThreeDimensionalInterface) {
-                throw new \Exception('Shape is not implementing ThreeDimensionalInterface');
+                throw new \Exception('Shape is not three dimensional.');
             }
 
             $volume[] = $shape->volume();
