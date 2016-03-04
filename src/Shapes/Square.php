@@ -15,7 +15,7 @@ class Square implements PlaneInterface
     /**
      * Square constructor.
      *
-     * @param $length
+     * @param int|float $length
      */
     public function __construct($length)
     {
