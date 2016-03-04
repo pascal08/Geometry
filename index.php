@@ -15,3 +15,13 @@ $areaCalculator = new ShapeCalculator\AreaCalculator($shapes);
 $outputter = new ShapeCalculator\Outputter($areaCalculator);
 
 echo $outputter->json();
+
+$shapes = array(
+    new Shapes\Cube(1, 1, 1)
+);
+
+$volumeCalculator = new ShapeCalculator\VolumeCalculator($shapes);
+
+$outputter = new ShapeCalculator\Outputter($volumeCalculator);
+
+echo $outputter->json();
