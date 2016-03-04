@@ -1,7 +1,7 @@
 <?php
 
 use Acme\Shapes as Shapes;
-use Acme\ShapeCalculator as ShapeCalculator;
+use Acme\ShapeCalculator\AreaCalculator;
 
 class AreaCalculatorTest extends \PHPUnit_Framework_TestCase
 {
@@ -21,11 +21,11 @@ class AreaCalculatorTest extends \PHPUnit_Framework_TestCase
         );
     }
 
-    public function testAreaCalculation()
+    public function testCalculation()
     {
-        $areaCalculator = new ShapeCalculator\AreaCalculator($this->shapes);
+        $calculator = new AreaCalculator($this->shapes);
 
-        $area = $areaCalculator->calculate();
+        $area = $calculator->calculate();
 
         $assertValue = 298.2997;
 
