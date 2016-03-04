@@ -8,26 +8,26 @@ class RectangularPrism implements SolidInterface
 {
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $width;
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $depth;
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $height;
 
     /**
      * Cube constructor.
      *
-     * @param int|float $width
-     * @param int|float $depth
-     * @param int|float $height
+     * @param float|int $width
+     * @param float|int $depth
+     * @param float|int $height
      */
     public function __construct($width, $depth, $height)
     {
@@ -38,7 +38,7 @@ class RectangularPrism implements SolidInterface
     }
 
     /**
-     * @return int|float
+     * @return float|int
      */
     public function surfaceArea()
     {
@@ -50,7 +50,7 @@ class RectangularPrism implements SolidInterface
     }
 
     /**
-     * @return int|float
+     * @return float|int
      */
     public function volume()
     {
