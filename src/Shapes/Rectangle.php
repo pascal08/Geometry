@@ -7,7 +7,6 @@ use Acme\Shapes\Contracts\PlaneInterface;
 class Rectangle implements PlaneInterface
 {
 
-
     /**
      * @var float|int
      */
