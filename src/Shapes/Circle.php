@@ -31,7 +31,7 @@ class Circle implements TwoDimensionalInterface
     /**
      * @return float
      */
-    public function circumference()
+    public function perimeter()
     {
         return 2 * $this->radius * pi();
     }

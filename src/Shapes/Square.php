@@ -33,7 +33,7 @@ class Square implements TwoDimensionalInterface
     /**
      * @return float|int
      */
-    public function circumference()
+    public function perimeter()
     {
         return 4 * $this->length;
     }

@@ -5,5 +5,5 @@ namespace Acme\Shapes\Contracts;
 interface TwoDimensionalInterface {
 
     public function area();
-    public function circumference();
+    public function perimeter();
 }

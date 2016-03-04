@@ -20,14 +20,14 @@ $outputter = new ShapeCalculator\Outputter($areaCalculator);
 echo $outputter->json();
 echo PHP_EOL;
 
-// Circumference
-echo ' Circumference: ';
+// Perimeter
+echo ' Perimeter: ';
 
 $squares = array(
     new Shapes\Square(2)
 );
 
-$areaCalculator = new ShapeCalculator\CircumferenceCalculator($squares);
+$areaCalculator = new ShapeCalculator\PerimeterCalculator($squares);
 
 $outputter = new ShapeCalculator\Outputter($areaCalculator);
 

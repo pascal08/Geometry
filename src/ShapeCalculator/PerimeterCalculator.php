@@ -5,7 +5,7 @@ namespace Acme\ShapeCalculator;
 use Acme\ShapeCalculator\Contracts\CalculatorInterface;
 use Acme\Shapes\Contracts\TwoDimensionalInterface;
 
-class CircumferenceCalculator implements CalculatorInterface
+class PerimeterCalculator implements CalculatorInterface
 {
     /**
      * @var array
@@ -33,7 +33,7 @@ class CircumferenceCalculator implements CalculatorInterface
                 throw new \Exception('Shape is not two dimensional.');
             }
 
-            $area[] = $shape->circumference();
+            $area[] = $shape->perimeter();
         }
 
         return array_sum($area);

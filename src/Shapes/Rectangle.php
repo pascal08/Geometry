@@ -42,7 +42,7 @@ class Rectangle implements TwoDimensionalInterface
     /**
      * @return float|int
      */
-    public function circumference()
+    public function perimeter()
     {
         return 2 * $this->width + 2 * $this->height;
     }
