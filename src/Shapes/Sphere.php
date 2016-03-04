@@ -8,12 +8,12 @@ class Sphere implements SolidInterface
 {
 
     /**
-     * @var int|float
+     * @var float|int
      */
     public $radius;
 
     /**
-     * @param int|float $radius
+     * @param float|int $radius
      */
     public function __construct($radius)
     {
@@ -21,7 +21,7 @@ class Sphere implements SolidInterface
     }
 
     /**
-     * @return int|float
+     * @return float
      */
     public function volume()
     {
@@ -29,7 +29,7 @@ class Sphere implements SolidInterface
     }
 
     /**
-     * @return int|float
+     * @return float
      */
     public function surfaceArea()
     {
