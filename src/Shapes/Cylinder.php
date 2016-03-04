@@ -8,12 +8,12 @@ class Cylinder implements SolidInterface
 {
 
     /**
-     * @var int|float
+     * @var float|int
      */
-    private $length;
+    private $height;
 
     /**
-     * @var int|float
+     * @var float|int
      */
     private $radius;
 
@@ -21,11 +21,11 @@ class Cylinder implements SolidInterface
      * Cylinder constructor.
      *
      * @param $radius
-     * @param $length
+     * @param $height
      */
-    public function __construct($radius, $length)
+    public function __construct($radius, $height)
     {
-        $this->length = $length;
+        $this->height = $height;
         $this->radius = $radius;
     }
 
@@ -34,7 +34,7 @@ class Cylinder implements SolidInterface
      */
     public function volume()
     {
-        return pi() * pow($this->radius, 2) * $this->length;
+        return pi() * pow($this->radius, 2) * $this->height;
     }
 
     /**
@@ -42,6 +42,6 @@ class Cylinder implements SolidInterface
      */
     public function surfaceArea()
     {
-        return 2 * pi() * $this->radius * $this->length + 2 * pi() * pow($this->radius, 2);
+        return 2 * pi() * $this->radius * $this->height + 2 * pi() * pow($this->radius, 2);
     }
 }
