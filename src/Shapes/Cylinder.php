@@ -20,8 +20,8 @@ class Cylinder implements SolidInterface
     /**
      * Cylinder constructor.
      *
-     * @param $radius
-     * @param $height
+     * @param float|int $radius
+     * @param float|int $height
      */
     public function __construct($radius, $height)
     {
